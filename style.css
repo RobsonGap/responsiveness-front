@@ -24,7 +24,9 @@ header .container {
   align-items: center;
   justify-content: space-between;
 
-  width: 980px;
+  width: 90%; /* Alterando de fixo "px" para um layout fluido "%"; */
+  max-width: 980px; /*Usa Layout fixo para determinar o max */
+
   margin: auto;
 }
 
@@ -93,8 +95,10 @@ section.hero {
 }
 
 section.hero .container {
-  width: 980px;
-  margin: auto;
+  width: 90%; /*Usando Layout fluido "%"*/
+  max-width: 980px; /*Usando Layout fixo "px"*/
+
+  margin: auto; 
 
   display: flex;
 }
@@ -118,7 +122,8 @@ main {
 CARDS
 ==================*/
 .cards {
-  width: 980px;
+  width: 90%; /*Usando layout fluido "%"*/
+  max-width: 980px; /*Usando layout fixo "px"*/
   margin: auto;
 
   display: grid;
@@ -300,7 +305,8 @@ FORM
 }
 
 #form form {
-  width: 980px;
+  width: 90%; /*Usado a estrategia de layout fluido "%"*/
+  max-width: 980px; /*Usando a estrategia de layout fixo "px" */
   background: white;
   
   padding: 40px;
