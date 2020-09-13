@@ -90,3 +90,6 @@ Usamos a tag `<picture>` para que as imagens sejam responsivas.
 ```
 
 Sempre que possível, usar SVG ao invés de JPG, PNG
+
+
+Creditos: [Mayk Brito Rocketseat](https://www.youtube.com/watch?v=H91DhKPjhPk&t=397s)
