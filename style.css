@@ -7,12 +7,21 @@
   outline: 0;
 }
 
+html {
+  /* A cada 1rem será considerada 10px */
+  font-size: 62.5%;
+}
+
 html,
 body {
   height: 100vh;
   font-family: "Source Sans Pro";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+body { /*Usando estrategia de textos-fluidos*/
+  font-size: 1.6rem;
 }
 
 header {
@@ -42,13 +51,14 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  font-size: 1.4rem; /*Usando tecnica de layout fluido para que seja usado parao filho "em" multiplicar o valor*/
 }
 
 header nav ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem; /*Usando a tecnica de layout fluido "em" multiplicando pelo pai */
   padding: 24px;
   transition: all 250ms linear 0s;
 }
@@ -59,19 +69,19 @@ header nav ul li a:hover {
 
 h2 {
   color: rgb(75, 75, 75);
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 3.6rem; /* Usando layout `rem` - multiplicado pelo root */
+  line-height: 4.6rem; /* Usando layout `rem` - multiplicado pelo root */
 }
 
 h3 {
   color: rgb(75, 75, 75);
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 2.8rem; /* Usando layout `rem` - multiplicado pelo root */
+  line-height: 3.8rem; /* Usando layout `rem` - multiplicado pelo root */
 }
 
 .button {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
   background-color: rgb(113, 89, 193);
@@ -105,8 +115,8 @@ section.hero .container {
 
 section.hero p {
   color: rgb(154, 142, 191);
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.8rem; /* Usando layout `rem` - multiplicado pelo root */
+  line-height: 3.2rem; /* Usando layout `rem` - multiplicado pelo root */
   margin: 10px 0px 0px;
 }
 
@@ -132,8 +142,8 @@ CARDS
 }
 
 .text--medium {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem; /* Usando layout `rem` - multiplicado pelo root */
+  line-height: 2.6rem; /* Usando layout `rem` - multiplicado pelo root */
   font-weight: 400;
   color: #ecf0f1;
 }
@@ -340,7 +350,7 @@ FORM
   display: block;
   margin: -4px 8px 10px;
   padding: 12px;
-  font-size: 16px;
+  font-size: 1.6rem; /* Usando layout `rem` - multiplicado pelo root */
 }
 
 #form .button {
